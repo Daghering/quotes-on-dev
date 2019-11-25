@@ -1,0 +1,28 @@
+/*
+Theme Name: Quotes on Dev
+Author: Jawes Dagher
+Description: Generates random dev quotes.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: quotesondev
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+// IMPORTS GO HERE
+
+@import 'reset.scss';
+
+//contained within this file are all your resets, variables, mixins, and any utility class.
+@import 'base.scss';
+
+//contains all the CSS that handles the layout, such as the cotainer and any grid system.
+@import 'layout.scss';
+
+//anything reusable such as buttons, navbars, cards, etc.
+@import 'components.scss';
+
+// YOUR STYLES
