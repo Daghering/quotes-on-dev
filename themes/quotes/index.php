@@ -8,15 +8,17 @@
 
     <?php while( have_posts() ) :
         the_post(); ?>
-    
+    <div class = "quote-content">
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
+    </div>
     
     <!-- Loop ends -->
     <?php endwhile;?>
+    <div><button id ="quote-button">Generate New Quote</button></div>
     </section>
 
-    <button id ="quote-button">Generate New Quote</button>
+   
 
     <!-- <?php the_posts_navigation();?> -->
 

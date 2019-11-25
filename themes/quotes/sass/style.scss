@@ -26,3 +26,13 @@ Text Domain: quotesondev
 @import 'components.scss';
 
 // YOUR STYLES
+
+.quote-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-button {
+    align-items: center;
+}
