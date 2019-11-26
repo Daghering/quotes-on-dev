@@ -2,16 +2,16 @@
 
 <?php if( have_posts() ) :?>
 
-<section id = "quotes-content">
+<section id = "submit-content">
 
 <!-- The WordPress Loop: loads post content  -->
 
     <?php while( have_posts() ) :
         the_post(); ?>
-    <div class = "quote-content">
-    <!-- <h2><?php the_title(); ?></h2> -->
+    <!-- <div class = "quote-content">
+    <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
-    </div>
+    </div> -->
     
     <!-- Loop ends -->
     <?php endwhile;?>

@@ -11,15 +11,15 @@
     <div class = "quote-content">
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
-    </div>
+    <br />
     
     <!-- Loop ends -->
     <?php endwhile;?>
     </section>
 
+    <div><button id ="quote-button">Generate New Quote</button></div>
    
 
-    <div><button id ="quote-button">Generate New Quote</button></div>
    
 
    

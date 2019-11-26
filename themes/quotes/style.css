@@ -61,6 +61,21 @@ body {
 body {
   background: lightgrey; }
 
+html {
+  height: 100vh; }
+
+body {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ffffff;
+  background-color: black; }
+
+.banner-img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
 .quote-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +88,35 @@ body {
           align-items: center; }
 
 #quote-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  background: none;
+  border: 2px solid #00cc00;
+  font-size: 16px;
+  color: white; }
+
+#submit-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 50px;
+  font-family: 'Arial';
+  font-size: 14px;
+  color: #00cc00; }
+  .footer-links span {
+    color: white; }
