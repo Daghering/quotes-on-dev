@@ -4,6 +4,7 @@
 function quotes_files() {
     wp_enqueue_style('quotes_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+    wp_enqueue_style('font-awesome', "https://use.fontawesome.com/releases/v5.8.2/css/all.css");
     wp_enqueue_script('api_js', get_template_directory_uri() . '/js/api.js', array('jquery'), microtime(), true);
     wp_enqueue_script( 'wp-api' );
 

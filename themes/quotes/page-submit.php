@@ -1,33 +1,24 @@
 <?php get_header(); ?>
-
-<?php if( have_posts() ) :?>
-
 <section id = "submit-content">
+<!-- <i class="fas fa-quote-left"></i>  -->
+<div>
 
-<!-- The WordPress Loop: loads post content  -->
+<h1>Submit a Quote</h1>
 
-    <?php while( have_posts() ) :
-        the_post(); ?>
-    <!-- <div class = "quote-content">
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
-    </div> -->
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
-    <form>
-        <input id="quote-title" type="text">
+    <div>
+        <h3>Author</h3>
+        <form>
+        <input id="quote-author" type="text">
     </form>
-    <div><button id ="submit-button">Submit a Quote</button></div>
+    </div>
+    <div>
+    <h3>Quote</h3>
+        <form>
+        <input id="quote-quote" type="text">
+    </form></div>
+    <div><button id ="submit-quote-button">Submit Quote</button></div>
+    </div>
+    <!-- <i class="fas fa-quote-right"></i> -->
     </section>
-
-   
-
-    <!-- <?php the_posts_navigation();?> -->
-
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
-
     
 <?php get_footer();?>

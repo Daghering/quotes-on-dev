@@ -65,11 +65,11 @@ html {
   height: 100vh; }
 
 body {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-left: 50px;
   padding-right: 50px;
   color: #ffffff;
-  background-color: black; }
+  background-color: #222222; }
 
 .banner-img {
   display: block;
@@ -86,26 +86,71 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .quote-content h2 {
+    font-size: 16px;
+    padding-top: 10px; }
+
+i {
+  font-size: 1.5em;
+  padding: 40px;
+  color: #00cc00; }
 
 #quote-button {
   display: block;
   margin: 0 auto;
   margin-top: 25px;
+  padding: 5px;
   background: none;
-  border: 2px solid #00cc00;
+  border: 1px solid #00cc00;
+  border-radius: 4px;
   font-size: 16px;
-  color: white; }
+  color: #00cc00; }
 
 #submit-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  font-size: 15px; }
+  #submit-content h1 {
+    font-size: 20px; }
+  #submit-content h1, #submit-content h2, #submit-content h3 {
+    padding-bottom: 15px; }
+  #submit-content div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #submit-content #quote-author {
+    width: 300px;
+    margin-bottom: 15px;
+    border: 1px solid #00cc00;
+    background-color: #222222; }
+  #submit-content #quote-quote {
+    width: 600px;
+    height: 200px;
+    border: 1px solid #00cc00;
+    background-color: #222222; }
+
+#submit-quote-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 5px;
+  background: none;
+  border: 1px solid #00cc00;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #00cc00; }
 
 .footer-links {
   display: -webkit-box;
@@ -119,4 +164,8 @@ body {
   font-size: 14px;
   color: #00cc00; }
   .footer-links span {
-    color: white; }
+    color: white;
+    padding: 2px; }
+  .footer-links a {
+    text-decoration: none;
+    color: #00cc00; }

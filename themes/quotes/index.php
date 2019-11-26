@@ -8,16 +8,21 @@
 
     <?php while( have_posts() ) :
         the_post(); ?>
+      
     <div class = "quote-content">
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
-    <br />
-    
+    <i class="fas fa-quote-left"></i>
+    <div class = "main-content">
+    <div><?php the_content(); ?></div>
+    <div><h2><?php the_title(); ?></h2></div>
+    </div>
+    <i class="fas fa-quote-right"></i>
+    </div>
+
     <!-- Loop ends -->
     <?php endwhile;?>
     </section>
 
-    <div><button id ="quote-button">Generate New Quote</button></div>
+    <div><button id ="quote-button">Show Me Another!</button></div>
    
 
    
