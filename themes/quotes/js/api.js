@@ -23,7 +23,25 @@
 
         })
 
-    })  
+    })
+    
+    $("#submit-button").on("click", function(e) {
+        const $title = $("#quote-title").val()
+        console.log($title)
+
+        const data = {
+            title: $title
+        }
+
+        $.ajax({
+            method:'POST',
+            url:wpApiSettings.root + 'wp/v2/posts',
+            data, 
+            beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce)
+            }
+        })
+    })
 
 })(jQuery);
 
