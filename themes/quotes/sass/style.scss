@@ -74,15 +74,21 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     font-size: 15px;
+
+    textarea{
+        color: #ffffff;
+        text-align: top;
+    }
 
     h1 {
         font-size: 20px;
     }
 
     h1, h2, h3 {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     div {
@@ -91,14 +97,28 @@ i {
 
     #quote-author {
         width: 300px;
-        margin-bottom: 15px;
+        height: 20px;
         border: 1px solid #00cc00;
         background-color: #222222;
     }
 
     #quote-quote {
         width: 600px;
-        height: 200px;
+        height: 100px;
+        border: 1px solid #00cc00;
+        background-color: #222222;
+
+      
+    }
+    #quote-source {
+        width: 300px;
+        height: 20px;
+        border: 1px solid #00cc00;
+        background-color: #222222;
+    }
+    #quote-url {
+        width: 300px;
+        height: 20px;
         border: 1px solid #00cc00;
         background-color: #222222;
     }
@@ -122,7 +142,7 @@ i {
 .footer-links {
     display: flex;
     justify-content: flex-end;
-    padding-top: 50px;
+    padding-top: 75px;
     font-family: 'Arial';
     font-size: 14px;
     color: #00cc00;

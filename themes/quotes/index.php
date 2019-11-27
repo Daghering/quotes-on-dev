@@ -18,6 +18,10 @@
     <i class="fas fa-quote-right"></i>
     </div>
 
+    
+    <?php echo get_field('quote_source');?>
+    <?php echo get_field('quote_url');?>
+
     <!-- Loop ends -->
     <?php endwhile;?>
     </section>

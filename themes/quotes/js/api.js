@@ -5,11 +5,11 @@
 
     $('#quote-button').on('click', function(e){
         e.preventDefault();
-        // console.log('herrrrooo')
+        
 
         $.ajax({
             method: 'GET',
-            url: wpApiSettings.root + 'wp/v2/posts'
+            url: qod_data.root_url + '/wp-json/quotes/v1/post'
         }).done(function(data){
             
             //Your loop goes here
@@ -17,8 +17,8 @@
             // length of the array. make sure to round to a whole number.
 
             const randomNumber = Math.floor(Math.random() * 10); 
-            const title = data[randomNumber].title.rendered
-            const content = data[randomNumber].content.rendered
+            const title = data[randomNumber].title
+            const content = data[randomNumber].content
 
             $('#quotes-content').html(`  <div class = "quote-content">
             <i class="fas fa-quote-left"></i>
@@ -43,7 +43,7 @@
 
         $.ajax({
             method:'POST',
-            url:wpApiSettings.root + 'wp/v2/posts',
+            url:qod_data.root_url + '/wp-json/wp/v2/posts',
             data, 
             beforeSend: function(xhr) {
             xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce)

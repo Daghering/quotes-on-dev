@@ -8,14 +8,26 @@
     <div>
         <h3>Author</h3>
         <form>
-        <input id="quote-author" type="text">
+        <textarea id="quote-author" type="text"></textarea>
     </form>
     </div>
     <div>
     <h3>Quote</h3>
         <form>
-        <input id="quote-quote" type="text">
+        <textarea id="quote-quote" type="text"></textarea>
     </form></div>
+    <div>
+        <h3>Where do you find this quote?(e.g. book name)</h3>
+        <form>
+        <textarea id="quote-source" type="text"></textarea>
+    </form>
+    </div>
+    <div>
+        <h3>Provide the url of the quote source, if available.</h3>
+        <form>
+        <textarea id="quote-url" type="text"></textarea>
+    </form>
+    </div>
     <div><button id ="submit-quote-button">Submit Quote</button></div>
     </div>
     <!-- <i class="fas fa-quote-right"></i> -->

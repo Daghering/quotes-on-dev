@@ -7,4 +7,4 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body <?php body_class();?>>
-<img class="banner-img" src="<?php echo get_stylesheet_directory_uri();?>../assets/assets/qod-logo.svg">
+<a href="<?php echo get_home_url();?>"><img  class="banner-img" src="<?php echo get_stylesheet_directory_uri();?>../assets/assets/qod-logo.svg"></a>
