@@ -24,7 +24,7 @@
             <i class="fas fa-quote-left"></i>
             <div class = "main-content">
             <div>${content}</div>
-            <div><h2>${title}</h2></div>
+            <div><h2>- ${title}</h2></div>
             </div>
             <i class="fas fa-quote-right"></i>
             </div>`)
@@ -33,20 +33,28 @@
 
     })
     
-    $("#submit-button").on("click", function(e) {
-        const $title = $("#quote-title").val()
+    $("#submit-quote-button").on("click", function(e) {
+        const $title = $("#quote-author").val()
+        const $content = $("#quote-quote").val()
+        const $url = $("#quote-url").val()
+        const $source = $("#quote-source").val()
+        
         
 
         const data = {
-            title: $title
+            title: $title,
+            content: $content,
+            url: $url,
+            source: $source
+
         }
 
         $.ajax({
             method:'POST',
-            url:qod_data.root_url + '/wp-json/wp/v2/posts',
+            url: qod_data.root_url + '/wp-json/wp/v2/posts',
             data, 
             beforeSend: function(xhr) {
-            xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce)
+            xhr.setRequestHeader('X-WP-NONCE', qod_data.nonce);
             }
         })
     })

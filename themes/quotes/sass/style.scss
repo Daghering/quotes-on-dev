@@ -32,6 +32,7 @@ Text Domain: quotesondev
     display:block;
     margin: 0 auto;
     padding-bottom: 50px;
+    
 }
 
 
@@ -40,6 +41,7 @@ Text Domain: quotesondev
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     h2 {
         font-size: 16px;
@@ -64,6 +66,12 @@ i {
     border-radius: 4px;
     font-size: 16px;
     color: #00cc00;
+    outline: none;
+    &:hover {
+        background: darkgreen;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 
@@ -74,7 +82,6 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // align-items: center;
     font-size: 15px;
 
     textarea{

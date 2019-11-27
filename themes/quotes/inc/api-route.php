@@ -2,7 +2,7 @@
 
 function quotesAPI() {
     register_rest_route('quotes/v1', 'post', array(
-        'methods' => WP_REST_SERVER::READABLE,
+        'methods' => array(WP_REST_SERVER::READABLE, WP_REST_SERVER::CREATABLE),
         'callback' => 'quotesResults' 
     ));
 }

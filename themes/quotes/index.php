@@ -13,7 +13,7 @@
     <i class="fas fa-quote-left"></i>
     <div class = "main-content">
     <div><?php the_content(); ?></div>
-    <div><h2><?php the_title(); ?></h2></div>
+    <div><h2>- <?php the_title(); ?></h2></div>
     </div>
     <i class="fas fa-quote-right"></i>
     </div>
@@ -26,7 +26,7 @@
     <?php endwhile;?>
     </section>
 
-    <div><button id ="quote-button">Show Me Another!</button></div>
+    <div><button id ="quote-button">MORE QUOTES!</button></div>
    
 
    

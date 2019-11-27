@@ -58,9 +58,6 @@ body {
   background: white;
   font-size: 2em; }
 
-body {
-  background: lightgrey; }
-
 html {
   height: 100vh; }
 
@@ -104,7 +101,12 @@ i {
   border: 1px solid #00cc00;
   border-radius: 4px;
   font-size: 16px;
-  color: #00cc00; }
+  color: #00cc00;
+  outline: none; }
+  #quote-button:hover {
+    background: darkgreen;
+    color: white;
+    cursor: pointer; }
 
 #submit-content {
   display: -webkit-box;
