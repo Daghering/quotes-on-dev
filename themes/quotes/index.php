@@ -13,20 +13,23 @@
     <i class="fas fa-quote-left"></i>
     <div class = "main-content">
     <div><?php the_content(); ?></div>
-    <div><h2>- <?php the_title(); ?></h2></div>
+   
+    <div class ="title-url"><h2>- <?php the_title(); ?>,</h2>
+    <a class = "url-links" href = "<?php echo get_post_meta(get_the_id(), '_qod_quote_source_url', true);?>">
+    <?php echo get_post_meta(get_the_id(), '_qod_quote_source', true);?></a>
+   </div>
     </div>
     <i class="fas fa-quote-right"></i>
     </div>
 
     
-    <?php echo get_field('quote_source');?>
-    <?php echo get_field('quote_url');?>
+ 
 
     <!-- Loop ends -->
     <?php endwhile;?>
     </section>
 
-    <div><button id ="quote-button">MORE QUOTES!</button></div>
+    <div><button id ="quote-button">More Quotes!</button></div>
    
 
    

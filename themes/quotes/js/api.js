@@ -1,63 +1,54 @@
-(function($){
-    
+(function($) {
+  // New Quote
 
-    // New Quote
+  $('#quote-button').on('click', function(e) {
+    e.preventDefault();
 
-    $('#quote-button').on('click', function(e){
-        e.preventDefault();
-        
+    $.ajax({
+      method: 'GET',
+      url: qod_data.root_url + '/wp-json/quotes/v1/post'
+    }).done(function(data) {
+      //Your loop goes here
+      //get length of data object, create random number between 0 and total
+      // length of the array. make sure to round to a whole number.
 
-        $.ajax({
-            method: 'GET',
-            url: qod_data.root_url + '/wp-json/quotes/v1/post'
-        }).done(function(data){
-            
-            //Your loop goes here
-            //get length of data object, create random number between 0 and total
-            // length of the array. make sure to round to a whole number.
+      const randomNumber = Math.floor(Math.random() * 10);
+      const title = data[randomNumber].title;
+      const content = data[randomNumber].content;
+      const source = data[randomNumber].quotesSource;
+      const url = data[randomNumber].quotesURL;
 
-            const randomNumber = Math.floor(Math.random() * 10); 
-            const title = data[randomNumber].title
-            const content = data[randomNumber].content
-
-            $('#quotes-content').html(`  <div class = "quote-content">
+      $('#quotes-content').html(`  <div class = "quote-content">
             <i class="fas fa-quote-left"></i>
             <div class = "main-content">
             <div>${content}</div>
-            <div><h2>- ${title}</h2></div>
+            <div><h2>- ${title},</h2><a class = "url-links" href = "${source}", true);?>${url}</a></div>
             </div>
             <i class="fas fa-quote-right"></i>
-            </div>`)
+            </div>`);
+    });
+  });
 
-        })
+  $('#submit-quote-button').on('click', function(e) {
+    const $title = $('#quote-author').val();
+    const $content = $('#quote-quote').val();
+    const $url = $('#quote-url').val();
+    const $source = $('#quote-source').val();
 
-    })
-    
-    $("#submit-quote-button").on("click", function(e) {
-        const $title = $("#quote-author").val()
-        const $content = $("#quote-quote").val()
-        const $url = $("#quote-url").val()
-        const $source = $("#quote-source").val()
-        
-        
+    const data = {
+      title: $title,
+      content: $content,
+      _qod_quote_source_url: $url,
+      _qod_quote_source: $source
+    };
 
-        const data = {
-            title: $title,
-            content: $content,
-            url: $url,
-            source: $source
-
-        }
-
-        $.ajax({
-            method:'POST',
-            url: qod_data.root_url + '/wp-json/wp/v2/posts',
-            data, 
-            beforeSend: function(xhr) {
-            xhr.setRequestHeader('X-WP-NONCE', qod_data.nonce);
-            }
-        })
-    })
-
+    $.ajax({
+      method: 'POST',
+      url: qod_data.root_url + '/wp-json/wp/v2/posts',
+      data,
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader('X-WP-NONCE', qod_data.nonce);
+      }
+    });
+  });
 })(jQuery);
-

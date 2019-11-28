@@ -2,15 +2,12 @@
 
 require get_theme_file_path('/inc/api-route.php');
 
-//Add custom fields to JSON API data
-function qod_custom_rest() {
-    register_rest_field('post', 'quoteSource', array(
-        'get_callback' => function(){return get_field('quote_source');}
-    ));
-    register_rest_field('post', 'quoteURL', array(
-        'get_callback' => function(){return get_field('quote_source');}
-    ));
-}
+// custom metaboxes with CMB2 Library.
+require get_theme_file_path('/inc/metaboxes.php');
+
+// custom functions that act independently of the theme templates
+require get_theme_file_path('/inc/extras.php');
+
 
 //Adds script and stylesheets
 function quotes_files() {

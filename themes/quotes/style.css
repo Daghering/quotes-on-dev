@@ -58,9 +58,6 @@ body {
   background: white;
   font-size: 2em; }
 
-html {
-  height: 100vh; }
-
 body {
   padding-top: 75px;
   padding-left: 50px;
@@ -106,7 +103,13 @@ i {
   #quote-button:hover {
     background: darkgreen;
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    text-transform: uppercase; }
+
+.title-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 #submit-content {
   display: -webkit-box;
@@ -125,7 +128,9 @@ i {
     text-align: top; }
   #submit-content h1 {
     font-size: 20px; }
-  #submit-content h1, #submit-content h2, #submit-content h3 {
+  #submit-content h1,
+  #submit-content h2,
+  #submit-content h3 {
     padding-bottom: 10px;
     padding-top: 10px; }
   #submit-content div {
@@ -165,6 +170,15 @@ i {
   font-size: 16px;
   color: #00cc00; }
 
+#about-title h2 {
+  font-size: 30px;
+  padding-bottom: 10px; }
+
+#about-content {
+  font-size: 18px; }
+  #about-content span {
+    color: #00cc00; }
+
 .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +187,7 @@ i {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 75px;
+  padding-bottom: 10px;
   font-family: 'Arial';
   font-size: 14px;
   color: #00cc00; }
