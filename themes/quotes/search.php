@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class = "search-results">
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
@@ -17,5 +17,5 @@
         <p>No posts found</p>
 <?php endif;?>
 
-</section>
+    
 <?php get_footer();?>

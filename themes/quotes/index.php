@@ -14,9 +14,11 @@
     <div class = "main-content">
     <div><?php the_content(); ?></div>
    
-    <div class ="title-url"><h2>- <?php the_title(); ?>,</h2>
+    <div class ="title-url">
+    <h2>- <?php the_title(); ?>,
     <a class = "url-links" href = "<?php echo get_post_meta(get_the_id(), '_qod_quote_source_url', true);?>">
     <?php echo get_post_meta(get_the_id(), '_qod_quote_source', true);?></a>
+    </h2>
    </div>
     </div>
     <i class="fas fa-quote-right"></i>

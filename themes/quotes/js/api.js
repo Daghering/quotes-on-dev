@@ -12,7 +12,7 @@
       //get length of data object, create random number between 0 and total
       // length of the array. make sure to round to a whole number.
 
-      const randomNumber = Math.floor(Math.random() * 10);
+      const randomNumber = Math.floor(Math.random() * data.length);
       const title = data[randomNumber].title;
       const content = data[randomNumber].content;
       const source = data[randomNumber].quotesSource;
@@ -22,7 +22,7 @@
             <i class="fas fa-quote-left"></i>
             <div class = "main-content">
             <div>${content}</div>
-            <div><h2>- ${title},</h2><a class = "url-links" href = "${source}", true);?>${url}</a></div>
+            <h2>- ${title}, <a class = "url-links" href = "${source}";?>${url}</a> </h2>
             </div>
             <i class="fas fa-quote-right"></i>
             </div>`);
@@ -51,4 +51,5 @@
       }
     });
   });
+
 })(jQuery);
