@@ -206,16 +206,21 @@ i {
     font-size: 16px;
     padding-bottom: 25px; }
 
-.search-results {
+#search-results {
   padding-right: 125px;
   padding-left: 125px; }
-  .search-results h2 {
+  #search-results h2 {
     font-size: 40px;
     color: #00cc00;
-    padding-bottom: 10px; }
-  .search-results p {
+    padding-bottom: 20px; }
+  #search-results p {
     font-size: 20px;
     padding-bottom: 25px; }
+
+hr {
+  border: 1px dashed lightgrey;
+  margin-bottom: 30px;
+  width: 910px; }
 
 .footer-links {
   display: -webkit-box;
