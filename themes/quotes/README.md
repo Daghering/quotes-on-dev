@@ -35,7 +35,7 @@ Access project at http://localhost/.
 
 ## Personal Learnings
 
-
+Learning how to incorporate ajax pulls with wordpress was very interesting. The inhabitent project helped me understand this project much better than I would have. 
 
 
 ### Contribution
