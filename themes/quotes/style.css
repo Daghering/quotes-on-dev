@@ -182,11 +182,14 @@ i {
 .login-section {
   padding: 10px;
   line-height: 2em; }
+  .login-section h2 {
+    font-size: 24px; }
   .login-section a {
     text-decoration: none; }
   .login-section h3 {
     color: #00cc00;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 22px; }
 
 #about-title h2 {
   font-size: 30px;
@@ -218,11 +221,17 @@ i {
     font-size: 16px;
     padding-bottom: 25px; }
 
+.search-title {
+  font-size: 40px;
+  padding-right: 125px;
+  padding-left: 125px;
+  padding-bottom: 15px; }
+
 #search-results {
   padding-right: 125px;
   padding-left: 125px; }
   #search-results h2 {
-    font-size: 40px;
+    font-size: 34px;
     color: #00cc00;
     padding-bottom: 20px; }
   #search-results p {
@@ -233,6 +242,23 @@ hr {
   border: 1px dashed lightgrey;
   margin-bottom: 30px;
   width: 910px; }
+
+.search-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px; }
+  .search-page i {
+    padding: 0px;
+    padding-left: 8px; }
+  .search-page p {
+    padding-bottom: 0px;
+    padding-left: 8px;
+    color: #00cc00;
+    margin: 0px;
+    font-size: 16px; }
+  .search-page p:nth-child(1) {
+    color: white; }
 
 .footer-links {
   display: -webkit-box;

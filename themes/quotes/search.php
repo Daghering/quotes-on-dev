@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+
+<h1 class ="search-title">Search Results for:</h1>
+
 <hr />
 
 <section id = "search-results"> 
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
@@ -23,6 +27,13 @@
         <p>No posts found</p>
 <?php endif;?>
 
+<section class="search-page">
+<p>1 </p> 
+<p>2 </p>
+<p>Next  </p><i class="fas fa-long-arrow-alt-right"></i>
 </section>
+
+</section>
+
 
 <?php get_footer();?>
