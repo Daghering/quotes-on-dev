@@ -247,7 +247,8 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12px; }
+  font-size: 12px;
+  padding-top: 25px; }
   .search-page i {
     padding: 0px;
     padding-left: 8px; }
