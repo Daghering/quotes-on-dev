@@ -59,6 +59,9 @@ body {
   font-size: 2em; }
 
 body {
+  font-family: 'Arial'; }
+
+body {
   padding-top: 75px;
   padding-left: 50px;
   padding-right: 50px;
@@ -175,6 +178,15 @@ i {
   border-radius: 4px;
   font-size: 16px;
   color: #00cc00; }
+
+.login-section {
+  padding: 10px;
+  line-height: 2em; }
+  .login-section a {
+    text-decoration: none; }
+  .login-section h3 {
+    color: #00cc00;
+    text-decoration: none; }
 
 #about-title h2 {
   font-size: 30px;

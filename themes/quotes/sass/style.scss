@@ -68,21 +68,17 @@ i {
     cursor: pointer;
     text-transform: uppercase;
   }
-  
-  
- 
 }
 
-.title-url { 
-    display: flex;
+.title-url {
+  display: flex;
 }
 
 .url-links {
-    text-decoration: none;
-    font-size: 16px;
-    padding-top: 10px;
-    color: #00cc00;
-
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #00cc00;
 }
 
 //SUBMIT PAGE
@@ -152,6 +148,18 @@ i {
   color: #00cc00;
 }
 
+.login-section {
+  padding: 10px;
+  line-height: 2em;
+  a {
+    text-decoration: none;
+  }
+  h3 {
+    color: #00cc00;
+    text-decoration: none;
+  }
+}
+
 //ABOUT PAGE
 
 #about-title {
@@ -172,47 +180,46 @@ i {
 //404 PAGE
 
 #ajaxsearchlite1 {
-    width: 240px;
-    background-color: #222222;
+  width: 240px;
+  background-color: #222222;
 }
 
 .fourohfour {
-display: flex;
-justify-content: space-between;
-flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-h1 {
+  h1 {
     padding-bottom: 25px;
-}
+  }
 
-p {
-        font-size:16px;
-        padding-bottom: 25px;
- }
-
+  p {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
 }
 
 // SEARCH RESULTS PAGE
 #search-results {
-    padding-right: 125px;
-    padding-left: 125px;
+  padding-right: 125px;
+  padding-left: 125px;
 
-    h2 {
-        font-size: 40px;
-        color: #00cc00;
-        padding-bottom: 20px;
-    }
+  h2 {
+    font-size: 40px;
+    color: #00cc00;
+    padding-bottom: 20px;
+  }
 
-    p{
-        font-size: 20px;
-        padding-bottom: 25px;
-    }
+  p {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
 }
 
 hr {
-    border: 1px dashed lightgrey;
-    margin-bottom: 30px;
-    width: 910px;
+  border: 1px dashed lightgrey;
+  margin-bottom: 30px;
+  width: 910px;
 }
 
 //FOOTER
